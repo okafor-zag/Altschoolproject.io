@@ -1,89 +1,118 @@
 body {
-    font-family: 'Darker Grotesque';
-    font-size: 22px;
-    background: #f1f1f1f1;
-    margin: 0;
-    padding: 0;
+  font-family: "Darker Grotesque";
+  font-size: 22px;
+  background: #f1f1f1f1;
+  margin: 0;
+  padding: 0;
 }
-*{
-    font-family: Darker Grotesque, sans-serif;
-    margin: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    outline: none;
-    border: none;
+* {
+  font-family: Darker Grotesque, sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
 }
-html{
- 
-    overflow-x: hidden;
+html {
+  overflow-x: hidden;
 }
 
-.team{
-    padding-top:30px;
+.team {
+  padding-top: 30px;
 }
-.container_team{
-    width: 100%;
-    height: auto;
-    background: #f0f0f0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-flow: wrap;
-    padding-top:50px;
-    text-align: center;
+img {
+  width: 194.9px;
+  height: 205px;
+  border-radius: 138.5px;
 }
-.circle_team {
-    width: 20%;
-    height: 300px;
-    background: #f0f0f1;
-    margin: 20px;
-    box-sizing: border-box;
-   
+h3 {
+  text-align: center;
+  font-family: "Darker Grotesque";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 49px;
+  text-transform: capitalize;
+  color: #121212;
 }
-img{
-width: 194.9px;
-height: 205px;
-border-radius: 138.5px;
+.about {
+  font-size: 18px;
+  width: 60%;
+  margin: 0 auto;
 }
-.fa-brands{
-height: 27px;
-width: 27px;
-text-decoration: none;
-color: black;
+.text-center {
+  text-align: center;
+}
 
+.slider {
+  background-color: rgb(231, 231, 231);
+  max-width: 900px;
+  margin: 2rem auto;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  padding-top: 1rem;
 }
-.name{
-    font-family: 'Darker Grotesque', sans-serif ;
-   font-weight:400;
-    font-size: 20px;
-    line-height: 23px;
-    padding: 5px;
-    }
+.slide {
+  position: absolute;
+  transition: transform 1s;
+  width: 100%;
+  height: 100%;
+}
+.slider-btn {
+  position: relative;
+  top: 40%;
+  padding: 0.8rem;
+  border-radius: 50px;
+  cursor: pointer;
+  background-color: #ccc;
+  font-size: 18px;
+}
+.next_btn {
+  float: right;
+  right: 2%;
+}
+.prev_btn {
+  left: 2%;
+}
+
+.fa-brands {
+  height: 27px;
+  width: 27px;
+  text-decoration: none;
+  color: black;
+}
+
+.name {
+  font-family: "Darker Grotesque", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  padding: 5px;
+}
 .teammates {
-text-align: center;
-font-family: 'Darker Grotesque';
-font-style: normal;
-font-weight: 700;
-font-size: 36px;
-line-height: 49px;
-text-transform: capitalize;
-color: #121212;
+  text-align: center;
+  font-family: "Darker Grotesque";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 49px;
+  text-transform: capitalize;
+  color: #121212;
 }
-.job{
-    font-weight:700;
-    font-size: 24px;
-    line-height: 32.5px
-    }
-
-@media screen and (max-width: 1200px){
-    .circle_team{
-        width:40%;
-
-    }
+.job {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32.5px;
 }
-    @media screen and (max-width: 600px){
-    .circle_team{
-        width:90%;
-        
-    }
+
+@media screen and (max-width: 1200px) {
+  .circle_team {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .circle_team {
+    width: 90%;
+  }
 }
