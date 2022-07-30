@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.main-container{
+    width: 1200px;
+    margin: 0 auto;
+    max-width: 100%;
+}
+.heading-text{
+    margin: auto;
+    text-align: center;
+    margin: 15px 0 15px 0;
+}
+
+.back-link{
+    text-decoration: none;
+    margin-top: 5%;
+}
+.main-form{
+    width: 40%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e6e6f8;
+    border-radius: 15px;
+    height: 50vh;
+}
+
+#sign-in-form{
+    width: 70%;
+}
+
+input{
+	width: 100%;
+	padding: 12px;
+    margin: 14px 0 25px 0;
+	resize: horizontal;
+}
+
+.buttons-container{
+    margin: auto;
+    align-items: center;
+}
+
+button{
+	border-radius: 3px;
+    margin-bottom: 5px;
+	color: #fff;
+	background-color: #6e70e4;
+	height: 4.5vh;
+	width: 100%;
+	border: none;
+}
