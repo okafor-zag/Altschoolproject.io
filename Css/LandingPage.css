@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;600;700;800;900&display=swap');
 body {
   font-family: "Darker Grotesque";
   font-size: 22px;
@@ -5,6 +6,11 @@ body {
   margin: 0;
   padding: 0;
 }
+
+html {
+  overflow-x: hidden;
+}
+
 * {
   font-family: Darker Grotesque, sans-serif;
   margin: 0;
@@ -13,8 +19,12 @@ body {
   outline: none;
   border: none;
 }
-html {
-  overflow-x: hidden;
+
+.wrapper{
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .team {
@@ -117,105 +127,90 @@ h3 {
   }
 }
 
-/* large screens */
-
-@media screen and (min-width:500px) {
-  header {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0px;
-      gap: 253px;
-      width: 1278px;
-      height: 56px;
-    }
-  header .logo {
-      font-size: 24px;
-      font-weight:600;
-      margin-left: 84px;
-  }
-
-  header  a{
-      color: black;
-  }
-
-    header .header-right a{
-      font-size:20px;
-      font-weight: 600;
-    }
-    header .header-right{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      gap: 64px;
-      
-    }
-
     a{
+      color: black;
       text-decoration: none;
     }
-
-    .hero{
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      margin: 123px 0 0 84px;
-    }
-
-    .hero .hero1{
-      font-size: 70px;
-      line-height:108.1%;
-      font-weight:700;
-    }
-
-    .hero2{
-      margin-top: 40px;
-    }
-
-    .hero2 button{
-      padding: 15px 50px;
-      background: #2F80ED;
-      border-radius: 5px;
-      border: 1px solid #2F80ED;
+    header {
+    margin-top: 40px;
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
     }
 
     button:hover{
       cursor: pointer;
     }
 
-    a{
+
+    header .logo {
+    font-size: 24px;
+    font-weight: 600;
+    }
+
+    .options{
+      display: flex;
+      font-size: 24px;
+      font-weight: 600;
+    }
+
+    .options_tag{
+      margin-left: 40px;
+    }
+
+    .hero{
+      display: flex;
+      justify-content: space-between;
+      margin-top: 77px;
+    }
+
+    .hero_text{
+      font-size: 70px;
+      line-height:108.1%;
+      font-weight:700;
+    }
+
+    .hero_btn{
+      margin-top: 40px;
+    }
+
+    .hero_btn button {
+      padding: 15px 50px;
+      border-radius: 5px;
+      background-color: #2F80ED;
+      color: white;
+      font-size: 24px;
+      font-weight: 600;
+    }
+
+    .hero_btn .no_bg{
+      background-color: transparent;
       color: black;
     }
 
-    .hero2 a{
-      margin-left: 110px;
-      font-weight:600;
-      flex-grow: 0;
-      font-size:24px;
-    }
-
-    .hero .section2{
-      margin-left:10px;
-      display: grid;
-      grid-template-columns: repeat(12, 1fr);
+    .hero_img {
+      margin-left: 20px;
       position: relative;
     }
-
-    .section2 .rect3{
-      grid-column: -1 / span -1;
-      grid-row: 1; 
-      padding-top: 30%;
-      z-index: 1;
+      
+    .img_one img{
+      position: relative;
+      right: 40%;
     }
 
-    .section2 .rect2{
-      grid-column: 8 / 1;
-      grid-row:1;
+    .img_two img{
+      position: absolute;
+      top: 40%;
     }
 
-    .section2 img {
-      max-width:354px;
+    @media screen and (max-width: 1024px) {
+      .hero_text{
+        font-size: 8vh;
+      }
+      .hero_img img{
+        width: 300px;
+      }
+      
     }
 
     .user_guide{
@@ -246,4 +241,19 @@ h3 {
       padding:30px;
     }
 
-  }
+
+    @media screen and (max-width: 920px) {
+      .hero_img{
+        display: none;
+      }
+    }
+
+    @media screen and (max-width: 1158px) {
+      .hero_text{
+        font-size: 8vh;
+      }
+      .hero_img img{
+        width: 300px;
+      }
+    }
+
