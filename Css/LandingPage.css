@@ -226,19 +226,61 @@ h3 {
       text-align:center;
     } 
 
-    .user_guide .descript{
+     .descript{
       margin-top: 25px;
       display:flex;
-      flex-wrap: nowrap;
-      padding: 0px;
-      gap: 40px;
+      display:flex;
+      flex-direction:row;
+      justify-content:center
     }
 
-    .user_guide .description{
-      font-weight:700;
+    .descript #p1{
+      background: rgba(14, 103, 193, 0.2);
+      padding: 30px 30px 119px 30px;
+    }
+
+    .descript #p2{
+      background: rgba(248, 204, 0, 0.2);
+      padding: 30px 30px 119px 30px;    }
+
+    .descript #p3{
+      background: rgba(151, 71, 255, 0.2);
+      padding: 30px 30px 119px 30px;
+    }
+
+
+    .description{
+      padding: 30px;
+      position:relative;
+      font-weight: 700;
       font-size: 32px;
-      line-height:43px;
-      padding:30px;
+      line-height: 43px;
+    }
+
+    .des_one {
+      font-size:300px;
+      position:absolute;
+      right:-2%;
+      top:60%;
+      z-index: -1;
+    }
+
+    .descript #desc_one {
+      -webkit-text-fill-color: white; 
+      -webkit-text-stroke-width: 2px;
+      -webkit-text-stroke-color: #0E67C1;;
+    }
+
+    .descript #desc_two{
+      -webkit-text-fill-color: white; 
+      -webkit-text-stroke-width: 2px;
+      -webkit-text-stroke-color: #F8CC00;
+    }
+
+    .descript #desc_three{
+      -webkit-text-fill-color: white; 
+      -webkit-text-stroke-width: 2px;
+      -webkit-text-stroke-color: #9747FF;
     }
 
 
