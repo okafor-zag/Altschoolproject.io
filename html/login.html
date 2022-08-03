@@ -1,35 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Css/login.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../Css/login.css" />
     <title>Log In</title>
-</head>
-<body>
-    <div class="main-container">
-        <a href="../html/Landingpage.html" class="back-link">Back to home page</a> 
-        <h1 class="heading-text">Let's Get Started</h1>
-        <main class="main-form">
-           <form id="sign-in-form" name="sign-in-form">
-               
-            <label for="name">
-                <span class="text">Full Name</span><br>
-                <input type="text" placeholder="Full Name" id="name" required />
-            </label>
-            <br>
-    
-            <label for="name">
-                <span class="text">Input Your Phone Number</span><br>
-                <input type="tel" placeholder="Input Your Phone Number" required />
-            </label>
-            <br>
-            <div class="buttons-container">
-            <button>Submit</button>           
-            </div>
-           </form>
-        </main> 
-       </div>
-</body>
+    <link
+      href="https://fonts.googleapis.com/css?family=Darker Grotesque"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="backdrop hidden"></div>
+    <main class="main-container">
+      <p class="logo">Circle 149(Alt-School Africa)</p>
+      <p class="back-btn">
+        <a href="./Landingpage.html">&larr; Back to Home</a>
+      </p>
+      <h2 class="text-center">Let's get started</h2>
+      <form action="#">
+        <div class="input_label">
+          <label for="fullName">Full name:</label>
+          <input
+            type="text"
+            name="fullName"
+            id="fullName"
+            placeholder="Enter your name "
+          />
+        </div>
+        <br />
+        <div class="input_label">
+          <label for="number">Phone number: </label>
+          <input
+            type="text"
+            name="number"
+            id="number"
+            placeholder="Enter phone number"
+          />
+          <br /><br />
+        </div>
+        <button type="submit" class="check-btn">Check Network</button>
+      </form>
+    </main>
+    <div class="modal-container text-center hidden">
+      <p class="details">Your Details</p>
+      <p class="name">Your Full Name: Shola Kunle</p>
+      <p class="mobile-number">
+        Your Mobile Number is: <br />
+        09065706757
+      </p>
+      <p class="network">Your Network Provider is MTN</p>
+      <div class="text-center network-logo">
+        <img src="airtel.png" alt="img" />
+      </div>
+    </div>
+    <script src="../Js/index.js"></script>
+  </body>
 </html>
