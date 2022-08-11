@@ -10,7 +10,6 @@ body {
   width: 1200px;
   margin: 0 auto;
   height: 100%;
-  /* border: 1px solid red; */
 }
 
 .backdrop {
@@ -42,6 +41,7 @@ body {
 }
 .text-center {
   text-align: center;
+  margin-top: 3.5rem;
 }
 .main-container h2 {
   font-size: 32px;
@@ -145,10 +145,17 @@ body {
   }
 }
 @media (max-width: 370px) {
+  .overall-container{
+    width:60%;
+  }
   .main-container form {
-    width: 58%;
+    width: 55%;
     justify-content: flex-start;
   }
+  form{
+    margin-top: 30%;
+  }
+
   .main-container form input {
     width: 100%;
   }
