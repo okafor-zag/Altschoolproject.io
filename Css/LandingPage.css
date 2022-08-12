@@ -103,7 +103,7 @@ header .logo {
     top: 40%;
 }
 
-@media screen and (max-width: 1024px) {
+@media only screen and (min-width: 501px) and (max-width: 1024px) {
     .hero_text {
         font-size: 8vh;
     }
@@ -190,9 +190,7 @@ header .logo {
 }
 
 @media screen and (max-width: 1158px) {
-    .hero_text {
-        font-size: 8vh;
-    }
+
     .hero_img img {
         width: 300px;
     }
@@ -290,7 +288,6 @@ header .logo {
   .footer #foot1    {
   font-weight: 600;
   font-size: 24px;
-  line-height: 108.1%;
   color: white;
   }
 
@@ -305,3 +302,181 @@ header .logo {
     font-weight: 800;
     font-size: 20px;
     color: white;
+  }
+
+  @media screen and (min-width: 501px) {
+
+  .options img{
+    display:none;
+  }
+}
+
+  @media screen and (max-width: 500px) {
+    header .logo{
+        font-weight: 600;
+        font-size: 16px;
+    }
+
+    header .options a{
+        display: none;
+    }
+
+    .options img{
+        /* visibility: visible; */
+        width: 20px;
+    }
+
+    .hero{
+        font-weight: 700;
+        font-size: 36px;
+        text-align: center;
+        margin:0;
+        padding: 10px;
+    }
+
+    .hero_text{
+        font-weight: 700;
+        font-size: 36px
+    }
+
+    .hero_btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 25px;
+        flex-direction: row;
+    }
+
+    .hero_btn .no_bg{
+        font-weight: 600;
+        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:space-between;
+    }
+    
+    .user_guide{
+        display:block;
+        margin-top:90px;
+        margin-bottom:
+    }
+
+    .user_guide #guide{
+        font-weight: 600;
+        font-size: 32px;
+        margin-bottom :30px;
+    }
+
+    .description #p1, #p2, #p3 {
+        font-weight: 700;
+        font-size: 24px;
+        padding: 30px 30px 96px 30px;
+    }
+
+    .description{
+        position: relative;
+        padding:20px;
+    }
+    
+    .description .des_one{
+        font-weight: 700;
+        font-size: 220px;
+        position: absolute;
+        right: 1%;
+        top: 66%;
+        z-index: -1;
+    }
+
+    .descript{
+        display:block;
+    }
+
+    .team{
+        display:block;
+        padding: 0;
+        margin: 92px 10px 71px 10px;
+    }
+
+    #team_h1{
+        padding: 10px;
+        background-color:transparent;
+        margin-bottom:38px;
+    }
+
+    #team_h1 p{
+        font-weight: 500;
+        font-size: 24px;
+    }
+
+    #team_h1 h1{
+        font-weight: 700;
+        font-size: 34px;
+    }
+
+    .team_main{
+        background-color:rgba(47, 128, 237, 0.1);
+        padding: 30px 20px 11px;
+    }
+
+    .team_img img{
+        width: 63px;
+        height: 66px;
+        border-radius: 138.5px;
+        margin-top: 30px;
+    }
+
+    .team_main span{
+        font-weight: 700;
+        font-size: 24px;
+        padding:20px;  
+    }
+    .team_type{
+        margin-top:35px;
+    }
+
+    .team_type p{
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    .team_icons{
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    .team_text{
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    .team_pic img{
+        width: 50px;
+        height: 52.78px;
+        border-radius: 138.5px;
+    }
+
+    .footer{
+        display: block;
+        padding: 22px;
+    }
+
+
+    #foot1{
+        font-weight: 600;
+        font-size: 16px;
+    }
+
+    #foot2{
+        font-weight: 600;
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+    #foot2 a{
+        font-weight: 800;
+        font-size: 16px;
+    }
+
+
+  }
