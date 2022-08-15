@@ -117,13 +117,33 @@ button{
     top: 40%;
 }
 
-@media only screen and (min-width: 501px) and (max-width: 1024px) {
+@media only screen and  (max-width: 1024px) {
     .hero_text {
-        font-size: 8vh;
+        font-size: 3.5rem;
     }
     .hero_img img {
         width: 300px;
     }
+
+ #p1, #p2, #p3{
+    font-size: 28px;
+    line-height: 38px;
+ }
+
+ .team{
+    margin: 100px 50px!important;
+ }
+
+ #team_h1 h1{
+    font-size: 40px!important;
+   
+}
+
+.team_desktop_arrow{
+    top: 40%;
+    left: 80%!important;
+}
+ 
 }
 
 .user_guide {
@@ -142,8 +162,6 @@ button{
 .descript {
     margin-top: 25px;
     display: flex;
-    display: flex;
-    flex-direction: row;
     justify-content: space-between;
 }
 
@@ -151,11 +169,12 @@ button{
 .description {
     padding: 30px;
     position: relative;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 32px;
     line-height: 43px;
     width: 392px;
     height: 364px;
+    margin-right: 20px;
 }
 
  .des_blue{
@@ -178,20 +197,6 @@ button{
     z-index: -1;
 }
 
-
-@media screen and (max-width: 920px) {
-    .hero_img {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 1158px) {
-
-    .hero_img img {
-        width: 300px;
-    }
-}
-
 .team {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -210,7 +215,7 @@ button{
 }
 
 #team_h1 h1{
-    font-size: 64px;
+    font-size: 60px;
     font-weight: 700;
 }
 
