@@ -27,6 +27,7 @@ html {
     padding-right: 20px;
 }
 
+
 a {
     color: black;
     text-decoration: none;
@@ -72,20 +73,33 @@ header .logo {
 
 .hero_btn {
     margin-top: 40px;
+    display: flex;
+    align-items: center;
+   
 }
 
-.hero_btn button {
+button{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.bg_btn {
     padding: 15px 50px;
     border-radius: 5px;
     background-color: #2F80ED;
     color: white;
-    font-size: 24px;
-    font-weight: 600;
+    margin-right: 20px;
+
 }
 
 .hero_btn .no_bg {
     background-color: transparent;
     color: black;
+    display: flex;
+}
+
+.no_bg img {
+    margin-right: 10px;
 }
 
 .hero_img {
@@ -312,8 +326,6 @@ header .logo {
     font-weight: 800;
     font-size: 20px;
     color: white;
-<<<<<<< HEAD
-=======
   }
 
   @media screen and (min-width: 501px) {
@@ -371,7 +383,6 @@ header .logo {
     .user_guide{
         display:block;
         margin-top:90px;
-        margin-bottom:
     }
 
     .user_guide #guide{
@@ -491,5 +502,4 @@ header .logo {
     }
 
 
->>>>>>> af000940b6385239c58d724614251dcdbdda0aa3
   }
