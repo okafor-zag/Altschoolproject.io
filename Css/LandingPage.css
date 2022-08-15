@@ -144,23 +144,9 @@ button{
     display: flex;
     display: flex;
     flex-direction: row;
-    justify-content: center
+    justify-content: space-between;
 }
 
-.descript #p1 {
-    background: rgba(14, 103, 193, 0.2);
-    padding: 30px 30px 119px 30px;
-}
-
-.descript #p2 {
-    background: rgba(248, 204, 0, 0.2);
-    padding: 30px 30px 119px 30px;
-}
-
-.descript #p3 {
-    background: rgba(151, 71, 255, 0.2);
-    padding: 30px 30px 119px 30px;
-}
 
 .description {
     padding: 30px;
@@ -168,34 +154,30 @@ button{
     font-weight: 700;
     font-size: 32px;
     line-height: 43px;
+    width: 392px;
+    height: 364px;
+}
+
+ .des_blue{
+    background: rgba(14, 103, 193, 0.2);
+}
+
+.des_yellow{
+    background: rgba(248, 204, 0, 0.2);
+}
+
+.des_purple{
+    background: rgba(151, 71, 255, 0.2);
 }
 
 .des_one {
     font-size: 300px;
     position: absolute;
-    right: -2%;
-    top: 60%;
+    right: 0;
+    top: 8%;
     z-index: -1;
 }
 
-.descript #desc_one {
-    -webkit-text-fill-color: white;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #0E67C1;
-    ;
-}
-
-.descript #desc_two {
-    -webkit-text-fill-color: white;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #F8CC00;
-}
-
-.descript #desc_three {
-    -webkit-text-fill-color: white;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #9747FF;
-}
 
 @media screen and (max-width: 920px) {
     .hero_img {
