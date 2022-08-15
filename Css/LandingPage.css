@@ -199,12 +199,25 @@ button{
     margin: 188px 84px;
 }
 
+
 #team_h1 {
-    font-weight: 700;
+    font-weight: 500;
     font-size: 35px;
     padding: 64px 20px 200px 35px;
     background: rgba(47, 128, 237, 0.1);
     margin-right: 20px;
+    position: relative;
+}
+
+#team_h1 h1{
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.team_desktop_arrow{
+    position: absolute;
+    top: 40%;
+    left: 90%;
 }
 
 .team_text {
@@ -278,14 +291,8 @@ button{
 }
 
 .footer {
-    display: flex;
-    justify-content:space-between;
- 
     height: 70px;
     background-color: #2F80ED;
-    display: flex;
-    align-items: center;
-    max-width: none;
     padding: 20px;
   }
 
@@ -295,6 +302,13 @@ button{
   line-height: 108.1%;
   color: white;
 
+  }
+
+  .footer_elements{
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
   }
 
   #foot2{
