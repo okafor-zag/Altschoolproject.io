@@ -332,6 +332,7 @@ button{
     background-color:transparent!important;
     margin: bottom 0px!important;
 }
+
 .team_area{
     align-items: center;
 }
@@ -372,8 +373,63 @@ button{
         display: none;
     }
 
-}
+    .hero{
+        margin-right: 0px;
+    }
 
+    .hero_text{
+        font-size: 35px;
+    }
+
+   
+    .bg_btn {
+        padding: 10px 30px;
+        font-size: 20px;
+    }
+
+    .no_bg{
+        font-size: 20px;
+    }
+    
+    .descript{
+        display: flex;
+        flex-direction: column!important;
+    }
+
+    .description{
+        width: 388px!important;
+        margin-bottom: 20px;
+        margin-right: 0px!important;
+    }
+
+    .des_one{
+        right: -10.2%!important;
+        top: 8%;
+    }
+
+    .description p{
+        font-size: 30px!important;
+    }
+
+    
+    #team_h1 h1{
+        font-size: 30px!important;
+    }
+
+    .team_desktop_arrow{
+        top: 70%!important;
+        left: 80%!important;
+    }
+    
+    .team_main{
+        width: 100%!important;
+    }
+
+    .team{
+        padding: 0px!important;
+    }
+
+}
 
 .user_guide {
     margin-top: 234px;
@@ -419,7 +475,6 @@ button{
 }
 
 .des_one {
-    font-size: 300px;
     position: absolute;
     right: 0;
     top: 8%;
