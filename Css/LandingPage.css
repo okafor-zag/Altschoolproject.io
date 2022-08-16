@@ -7,6 +7,7 @@ body {
     padding: 0;
 }
 
+
 html {
     overflow-x: hidden;
 }
@@ -27,6 +28,13 @@ html {
     padding-right: 20px;
 }
 
+.hamburger{
+    display: none;
+}
+
+.mobile_icon{
+    display: none;
+}
 
 a {
     color: black;
@@ -37,6 +45,7 @@ header {
     margin-top: 40px;
     height: 56px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -121,7 +130,7 @@ button{
     top: 40%;
 }
 
-@media only screen and  (min-width: 1024px) {
+@media only screen and  (max-width: 1024px) {
     .hero_text {
         font-size: 3.5rem;
     }
@@ -184,12 +193,12 @@ button{
  }
 
  .des_one {
-    right: 0;
-    top: 8%;
+    right: -18%!important;
+    top: 9%!important;
 }
 
 .des_one img{
-    width: 60px;
+    width: 60%;
 }
 
 .description{
@@ -197,20 +206,172 @@ button{
     padding: 20px!important ;
 }
 
- .team{
-    margin: 100px 10px!important;
+.team_desktop_arrow{
+    top: 60%!important;
+    left: 50%!important;
+}
+
+.desktop_icon{
+    display: none;
+}
+
+.mobile_icon{
+    display: flex;
+}
+
+.team{
+    display: flex!important;
+    flex-direction: column;
+    padding: 0;
+    margin: 92px 10px 71px 10px;
+}
+
+#team_h1{
+    padding: 0px!important;
+    background-color:transparent!important;
+    margin: bottom 0px!important;
+}
+.team_area{
+    align-items: center;
+}
+
+#team_h1 p{
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.team_main{
+    background-color:rgba(47, 128, 237, 0.1);
+    padding: 30px 20px 11px;
+}
+
+
+.team_main span{
+   font-size: 30px!important;  
+}
+
+.team_text{
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.team_pic{
+    margin-bottom: 20px!important;
+}
+ 
+}
+
+@media only screen and  (max-width: 768px) {
+    .hero{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+
+    .hero_info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tab{
+        display: flex!important;
+        font-size: 3rem;
+        text-align: center;
+    }
+    .hero_text {
+       display: none;
+    }
+    .hero_img img {
+        display: none;
+    }
+
+ #p1, #p2, #p3{
+    font-size: 18px;
+    line-height: 25px;
  }
 
- #team_h1 h1{
-    font-size: 35px!important;
-    
+ .des_one {
+    right: -18%!important;
+    top: 9%!important;
+}
+
+.des_one img{
+    width: 60%;
+}
+
+.description{
+    height: 220px!important;
+    padding: 20px!important ;
 }
 
 .team_desktop_arrow{
-    top: 40%;
-    left: 80%!important;
+    top: 60%!important;
+    left: 50%!important;
+}
+
+.desktop_icon{
+    display: none;
+}
+
+.mobile_icon{
+    display: flex;
+}
+
+.team{
+    display: flex!important;
+    flex-direction: column;
+    padding: 0;
+    margin: 92px 10px 71px 10px;
+}
+
+#team_h1{
+    padding: 0px!important;
+    background-color:transparent!important;
+    margin: bottom 0px!important;
+}
+.team_area{
+    align-items: center;
+}
+
+#team_h1 p{
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.team_main{
+    background-color:rgba(47, 128, 237, 0.1);
+    padding: 30px 20px 11px;
+}
+
+
+.team_main span{
+   font-size: 30px!important;  
+}
+
+.team_text{
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.team_pic{
+    margin-bottom: 20px!important;
 }
  
+}
+
+@media only screen and  (max-width: 425px) {
+    .hamburger{
+        display: flex;
+        align-items: center;
+    }
+
+    .options_items{
+        display: none;
+    }
+
 }
 
 
@@ -374,7 +535,6 @@ button{
   font-size: 24px;
   line-height: 108.1%;
   color: white;
-
   }
 
   .footer_elements{
@@ -397,178 +557,3 @@ button{
     color: white;
   }
 
-  @media screen and (min-width: 501px) {
-
-  .options img{
-    display:none;
-  }
-}
-
-  @media screen and (max-width: 500px) {
-    header .logo{
-        font-weight: 600;
-        font-size: 16px;
-    }
-
-    header .options a{
-        display: none;
-    }
-
-    .options img{
-        /* visibility: visible; */
-        width: 20px;
-    }
-
-    .hero{
-        font-weight: 700;
-        font-size: 36px;
-        text-align: center;
-        margin:0;
-        padding: 10px;
-    }
-
-    .hero_text{
-        font-weight: 700;
-        font-size: 36px
-    }
-
-    .hero_btn{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 10px 25px;
-        flex-direction: row;
-    }
-
-    .hero_btn .no_bg{
-        font-weight: 600;
-        font-size: 16px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content:space-between;
-    }
-    
-    .user_guide{
-        display:block;
-        margin-top:90px;
-    }
-
-    .user_guide #guide{
-        font-weight: 600;
-        font-size: 32px;
-        margin-bottom :30px;
-    }
-
-    .description #p1, #p2, #p3 {
-        font-weight: 700;
-        font-size: 24px;
-        padding: 30px 30px 96px 30px;
-    }
-
-    .description{
-        position: relative;
-        padding:20px;
-    }
-    
-    .description .des_one{
-        font-weight: 700;
-        font-size: 220px;
-        position: absolute;
-        right: 1%;
-        top: 66%;
-        z-index: -1;
-    }
-
-    .descript{
-        display:block;
-    }
-
-    .team{
-        display:block;
-        padding: 0;
-        margin: 92px 10px 71px 10px;
-    }
-
-    #team_h1{
-        padding: 10px;
-        background-color:transparent;
-        margin-bottom:38px;
-    }
-
-    #team_h1 p{
-        font-weight: 500;
-        font-size: 24px;
-    }
-
-    #team_h1 h1{
-        font-weight: 700;
-        font-size: 34px;
-    }
-
-    .team_main{
-        background-color:rgba(47, 128, 237, 0.1);
-        padding: 30px 20px 11px;
-    }
-
-    .team_img img{
-        width: 63px;
-        height: 66px;
-        border-radius: 138.5px;
-        margin-top: 30px;
-    }
-
-    .team_main span{
-        font-weight: 700;
-        font-size: 24px;
-        padding:20px;  
-    }
-    .team_type{
-        margin-top:35px;
-    }
-
-    .team_type p{
-        font-weight: 600;
-        font-size: 20px;
-    }
-
-    .team_icons{
-        font-weight: 500;
-        font-size: 20px;
-    }
-
-    .team_text{
-        font-weight: 500;
-        font-size: 16px;
-    }
-
-    .team_pic img{
-        width: 50px;
-        height: 52.78px;
-        border-radius: 138.5px;
-    }
-
-    .footer{
-        display: block;
-        padding: 22px;
-    }
-
-
-    #foot1{
-        font-weight: 600;
-        font-size: 16px;
-    }
-
-    #foot2{
-        font-weight: 600;
-        font-size: 16px;
-        margin-top: 20px;
-    }
-
-    #foot2 a{
-        font-weight: 800;
-        font-size: 16px;
-    }
-
-
-  }
