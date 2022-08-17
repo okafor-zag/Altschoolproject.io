@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;600;700;800;900&display=swap');
 body {
   margin: 0;
   padding: 0;
@@ -5,12 +6,23 @@ body {
   background-color: #f1f1f1;
   font-family: "Darker Grotesque";
 }
-.main-container {
-  max-width: 100%;
-  width: 1200px;
-  margin: 0 auto;
-  height: 100%;
+
+a{
+  text-decoration: none;
+  color: black;
 }
+
+.overall-container{
+  max-width: 1024px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.main-container {
+  margin: 0 auto;
+}
+
 
 .backdrop {
   position: fixed;
@@ -23,12 +35,19 @@ body {
   background: rgba(0, 0, 0, 0.5);
   transition: opacity 0.2s linear;
 }
+
+.logo-button-container h2 {
+  font-size: 40px;
+}
+
 .logo {
   font-size: 24px;
+  font-weight: 600;
 }
 .back-btn {
   margin-top: 2rem;
   margin-bottom: -2rem;
+  font-weight: 600;
 }
 .back-btn a {
   text-decoration: none;
@@ -47,42 +66,64 @@ body {
   font-size: 32px;
   margin-top: 0;
 }
-.main-container form {
+.main-container{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 30%;
-  margin: 1rem auto;
-  padding: 4rem;
+  padding: 100px;
   background-color: rgba(47, 128, 237, 0.1);
   border-radius: 5px;
 }
 .main-container form input {
-  width: 90%;
+  width: 95%;
   padding: 0.8rem;
-  margin: 0.5rem auto;
-  border: 1px solid #01c917;
+  border: 1px solid #AEAEAE;
   border-radius: 5px;
   font-size: 16px;
-}
-.main-container form label {
-  font-size: 22px;
-  font-weight: bold;
-}
-.main-container form input:focus {
+  background-color: transparent;
   outline: none;
-  border: 1px solid #2f80ed;
-  background-color: white;
 }
-.main-container form button {
-  width: 98%;
-  padding: 0.8rem;
-  background: rgba(47, 128, 237, 0.5);
+
+.user_number input{
+  background-color: transparent;
   border: none;
-  border-radius: 5px;
-  font-size: 22px;
-  color: white;
+  resize: none;
+  outline: none;
+  border: none!important;
+  padding: 0.8rem;
 }
+
+.user_number{
+  display: flex;
+  align-items: center;
+  border: 1px solid #AEAEAE;
+  border-radius: 5px;
+}
+
+.phone_num{
+  margin-top: 30px;
+}
+
+.input_label{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.check_btn{
+  width: 100%!important;
+  background-color: #2f80ed!important;
+  color: white;
+  border: none!important;
+  margin-top: 90px;
+}
+
+.input_label label{
+  font-size: 18px;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
 .modal-container {
   display: flex;
   flex-direction: column;
@@ -112,60 +153,34 @@ body {
   height: 100%;
   border-radius: 5px;
 }
-@media (max-width: 1000px) {
-  .main-container form {
-    width: 70%;
-  }
-  .main-container form button {
-    width: 93.8%;
-  }
-  .modal-container {
-    left: 30%;
-  }
-}
-@media (max-width: 767px) {
-  .main-container form button {
-    width: 97%;
-  }
-  .modal-container {
-    left: 20%;
-  }
-}
-@media (max-width: 500px) {
-  .main-container form {
-    width: 60%;
-  }
-  .modal-container {
-    left: 15%;
-  }
-}
-@media (max-width: 400px) {
-  .modal-container {
-    left: 7%;
-  }
-}
-@media (max-width: 370px) {
-  .overall-container{
-    width:60%;
-  }
-  .main-container form {
-    width: 55%;
-    justify-content: flex-start;
-  }
-  form{
-    margin-top: 30%;
-  }
 
-  .main-container form input {
-    width: 100%;
-  }
-  .main-container form button {
-    width: 112%;
-  }
-  .modal-container {
-    left: 4%;
-  }
-}
+
 .hidden {
   display: none;
+}
+
+
+@media screen and (max-width:768px) {
+  .main-container{
+    padding: 70px;
+  }
+}
+
+@media screen and (max-width:425px) {
+  .main-container{
+    padding: 20px;
+  }
+  .logo{
+    font-size: 18px;
+  }
+  .back-btn a{
+    font-size: 18px;
+  }
+  .logo-button-container h2 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  
 }
