@@ -445,12 +445,7 @@ header .logo {
 }
 
 @media  screen and (max-width: 500px) {
-    .wrapper {
-      max-width: 320px;
-      margin: 0 auto;
-      /* padding-left: 10px;
-      padding-right: 10px; */
-    }
+
     header {
       display: flex;
       gap: 30px !important;
