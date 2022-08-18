@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;600;700;800;900&display=swap");
 body {
   margin: 0;
   padding: 0;
@@ -7,12 +7,12 @@ body {
   font-family: "Darker Grotesque";
 }
 
-a{
+a {
   text-decoration: none;
   color: black;
 }
 
-.overall-container{
+.overall-container {
   max-width: 1024px;
   margin: 0 auto;
   padding-left: 20px;
@@ -22,7 +22,6 @@ a{
 .main-container {
   margin: 0 auto;
 }
-
 
 .backdrop {
   position: fixed;
@@ -66,7 +65,7 @@ a{
   font-size: 32px;
   margin-top: 0;
 }
-.main-container{
+.main-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -77,48 +76,78 @@ a{
 .main-container form input {
   width: 95%;
   padding: 0.8rem;
-  border: 1px solid #AEAEAE;
+  border: 1px solid #aeaeae;
   border-radius: 5px;
   font-size: 16px;
   background-color: transparent;
   outline: none;
 }
 
-.user_number input{
+.user_number input {
   background-color: transparent;
   border: none;
   resize: none;
   outline: none;
-  border: none!important;
+  border: none !important;
   padding: 0.8rem;
 }
 
-.user_number{
+.user_number {
   display: flex;
   align-items: center;
-  border: 1px solid #AEAEAE;
+  border: 1px solid #aeaeae;
   border-radius: 5px;
 }
 
-.phone_num{
+.phone_num {
   margin-top: 30px;
 }
-
-.input_label{
+.auto-suggest {
+  width: 100px;
+  margin-left: 4rem;
+  background-color: #fff;
+  text-align: left;
+  position: absolute;
+  height: 200px;
+  top:34rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.auto-suggest ul {
+  width: 100%;
+  margin-left: -2.45rem;
+  margin-top: 0;
+}
+.auto-suggest ul li {
+  list-style-type: none;
+  padding: 5px;
+}
+.auto-suggest ul li:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.error-text {
+  font: 32px;
+  color: red;
+  font-weight: bold;
+}
+.hidden {
+  display: none;
+}
+.input_label {
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 
-.check_btn{
-  width: 100%!important;
-  background-color: #2f80ed!important;
+.check_btn {
+  width: 100% !important;
+  background-color: #2f80ed !important;
   color: white;
-  border: none!important;
+  border: none !important;
   margin-top: 90px;
 }
 
-.input_label label{
+.input_label label {
   font-size: 18px;
   margin-bottom: 0.5rem;
   font-weight: 600;
@@ -154,26 +183,24 @@ a{
   border-radius: 5px;
 }
 
-
 .hidden {
   display: none;
 }
 
-
-@media screen and (max-width:768px) {
-  .main-container{
+@media screen and (max-width: 768px) {
+  .main-container {
     padding: 70px;
   }
 }
 
-@media screen and (max-width:425px) {
-  .main-container{
+@media screen and (max-width: 425px) {
+  .main-container {
     padding: 20px;
   }
-  .logo{
+  .logo {
     font-size: 18px;
   }
-  .back-btn a{
+  .back-btn a {
     font-size: 18px;
   }
   .logo-button-container h2 {
@@ -182,5 +209,4 @@ a{
 }
 
 @media screen and (max-width: 425px) {
-  
 }

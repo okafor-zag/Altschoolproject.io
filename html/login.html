@@ -13,52 +13,58 @@
   </head>
   <body>
     <div class="overall-container">
-    <div class="backdrop hidden"></div>
-    <div class="logo-button-container">
-    <p class="logo">Circle 149(Alt-School Africa)</p>
-      <p class="back-btn">
-        <a href="./Landingpage.html">&larr; Back to Home</a>
-      </p>
-      <h2 class="text-center">Let's Get Started</h2>
-    </div>
-    <main class="main-container">
-      <form action="#">
-        <div class="input_label">
-          <label for="fullName">Full name:</label>
-          <input
-            type="text"
-            name="fullName"
-            id="fullName"
-            placeholder="Enter your name "
-          />
-        </div>
-        <br />
-        <div class="input_label phone_num">
-          <label for="number">Phone number: </label>
-          <div class="user_number">
-            <img src="../img/airtel.png"><input
-            type="text"
-            name="number"
-            id="number"
-            placeholder="Enter phone number"
-          />
-          </div>
-        </div>
-       <input class="check_btn" type="submit" value="Submit">
-      </form>
-    </main>
-    <div class="modal-container text-center hidden">
-      <p class="details">Your Details</p>
-      <p class="name">Your Full Name: Shola Kunle</p>
-      <p class="mobile-number">
-        Your Mobile Number is: <br />
-        09065706757
-      </p>
-      <p class="network">Your Network Provider is MTN</p>
-      <div class="text-center network-logo">
-        <img src="airtel.png" alt="img" />
+      <div class="backdrop hidden"></div>
+      <div class="logo-button-container">
+        <p class="logo">Circle 149(Alt-School Africa)</p>
+        <p class="back-btn">
+          <a href="./Landingpage.html">&larr; Back to Home</a>
+        </p>
+        <h2 class="text-center">Let's Get Started</h2>
       </div>
-    </div>
+      <main class="main-container">
+        <form action="#" autocomplete="off">
+          <div class="input_label">
+            <label for="fullName">Full name:</label>
+            <input
+              type="text"
+              name="fullName"
+              id="fullName"
+              placeholder="Enter your name "
+              required
+            />
+          </div>
+          <br />
+
+          <div class="input_label phone_num">
+            <label for="number">Phone number: </label>
+            <div class="user_number">
+              <img src="../img/2.png" /><input
+                type="text"
+                name="number"
+                id="number"
+                placeholder="Enter phone number"
+                required
+              />
+            </div>
+            <div class="auto-suggest"></div>
+
+            <div class="error-text hidden">Invalid phone number</div>
+          </div>
+          <input class="check_btn" type="submit" value="Submit" />
+        </form>
+      </main>
+      <div class="modal-container text-center hidden">
+        <p class="details">Your Details</p>
+        <p class="name">Your Full Name: Shola Kunle</p>
+        <p class="mobile-number">
+          Your Mobile Number is: <br />
+          09065706757
+        </p>
+        <p class="network">Your Network Provider is MTN</p>
+        <div class="text-center network-logo">
+          <img src="1.png" alt="img" />
+        </div>
+      </div>
     </div>
     <script src="../Js/index.js"></script>
   </body>
