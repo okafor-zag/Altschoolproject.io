@@ -498,15 +498,6 @@ button{
     position: relative;
 }
 
-#team_h1{
-    padding: 0px!important;
-    background-color:transparent!important;
-    margin: bottom 0px!important;
-}
-
-.team_area{
-    align-items:center;
-}
 
 #team_h1 h1{
     font-size: 60px;
